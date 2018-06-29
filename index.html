@@ -16,7 +16,7 @@
 <section id="header" style="display: flex; flex-direction: column">
 
     <div id="top-header">
-        <div class="logo"><img src="images/Logo.png"/></div>
+        <div class="logo"><img src="../images/logo.png"/></div>
         <button id="sign-up-button">stay connected &rarr;</button>
     </div>
     <div class="content">
@@ -786,15 +786,15 @@
 
     gtag('config', 'UA-121645709-1');
 
-
-</script>
-<script type="text/javascript">
-   $('#play-button').click(function () {
-       alert('clicked');
+    $('#play-button').click(function () {
+        alert('clicked');
         gtag('event','video_start', {
             'event_callback':alert('complete')
         });
     })
+</script>
+<script type="text/javascript">
+
 </script>
 
 </body>
