@@ -253,23 +253,6 @@
 </section>
 
 
-<!--<section id="newsletter-form">-->
-<!--<div class="email">-->
-<!--<form action="https://homenoir.us18.list-manage.com/subscribe/post?u=1ef7bc0177e4caf5369888114&amp;id=14e327e026" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" novalidate>-->
-<!--<fieldset>-->
-<!--<label id="email-label" class="" for="mce-EMAIL">Enter your email to stay informed</label>-->
-<!--<input type="email" name="EMAIL" id="mce-EMAIL" required />-->
-<!--</fieldset>-->
-
-<!--&lt;!&ndash; real people should not fill this in and expect good things - do not remove this or risk form bot signups&ndash;&gt;-->
-<!--<div aria-hidden="true" style="display: none;"><input type="text" name="b_1ef7bc0177e4caf5369888114_14e327e026" tabindex="-1" value=""></div>-->
-
-<!--<button type="submit" name="subscribe" id="mc-embedded-subscribe"><img src="images/arrow.svg" /></button>-->
-<!--</form>-->
-<!--<p id="helper">You may unsubscribe at any time</p>-->
-<!--</div>-->
-<!--</section>-->
-
 <section class="footer">
     <img src="./images/closed-envelope.svg" alt="contact">
     <h2>Contacts us</h2>
@@ -662,8 +645,8 @@
     $(document).ready(function () {
         $('#cookies-close').on('click', function () {
             $('#cookies').slideUp('fast', function () {
-                $('#header').css("height", "75vh");
-                $('#video').css("height", "75vh");
+                $('#header').css("height", "73vh");
+                $('#video').css("height", "73vh");
             });
         });
         $('#play-video').on('click', function () {
@@ -778,21 +761,27 @@
     <!--ga('send', 'event', 'Videos', 'play');-->
 <!--</script>-->
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121645709-1"></script>
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121645709-1"></script>-->
+<!--<script>-->
+    <!--window.dataLayer = window.dataLayer || [];-->
+    <!--function gtag(){dataLayer.push(arguments);}-->
+    <!--gtag('js', new Date());-->
+
+    <!--gtag('config', 'UA-121645709-1');-->
+
+    <!--$('#play-button').click(function () {-->
+        <!--alert('clicked');-->
+        <!--gtag('event','video_start', {-->
+            <!--'event_callback':alert('complete')-->
+        <!--});-->
+    <!--})-->
+<!--</script>-->
 <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-121645709-1');
-
-    $('#play-button').click(function () {
-        alert('clicked');
-        gtag('event','video_start', {
-            'event_callback':alert('complete')
-        });
-    })
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-121645709-1', 'auto');
+    ga('send', 'pageview');
 </script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 <script type="text/javascript">
 
 </script>

@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59c62c0a-c2b7-4153-80ed-4c02a8fe62cb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Gareth.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Home_Noir_IntroVideo.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Jasel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Luca.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Rahima.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Stuart.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Zahoor.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/fallback.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/styles.css" afterDir="false" />
     </list>
@@ -26,7 +17,7 @@
     <favorites_list name="home-noir-stage.github.io" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ProximaNova-Bold.ttf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/font/ProximaNova-Bold.ttf">
           <provider selected="true" editor-type-id="fontseditor" />
@@ -35,11 +26,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="664" column="44" selection-start-line="664" selection-start-column="44" selection-end-line="664" selection-end-column="44" />
+            <state relative-caret-position="272">
+              <caret line="648" column="45" selection-start-line="648" selection-start-column="45" selection-end-line="648" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#672#678#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,8 +38,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+            <state relative-caret-position="140">
+              <caret line="588" column="20" selection-start-line="588" selection-start-column="20" selection-end-line="588" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -70,9 +60,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>copy</find>
-      <find>play-vide</find>
-      <find>video</find>
       <find>#video</find>
       <find>#footer</find>
       <find>nav</find>
@@ -96,10 +83,13 @@
       <find>top-ead</find>
       <find>”</find>
       <find>calc</find>
-      <find>.footer</find>
       <find>#hedaer</find>
       <find>play-button</find>
       <find>#header</find>
+      <find>@media</find>
+      <find>.footer</find>
+      <find>.footer {</find>
+      <find>h3 {</find>
     </findStrings>
     <replaceStrings>
       <replace>.footer</replace>
@@ -149,61 +139,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="home-noir-stage.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="home-noir-stage.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeNoirDeveloping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeNoirDeveloping" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="home-noir-stage.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="home-noir-stage.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="home-noir-stage.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="home-noir-stage.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="_posts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="home-noir-stage.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="home-noir-stage.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="home-noir-stage.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="home-noir-stage.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="font" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="home-noir-stage.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="home-noir-stage.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeNoirDeveloping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeNoirDeveloping" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="home-noir-stage.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="home-noir-stage.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="home-noir-stage.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="home-noir-stage.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="HomeNoirDeveloping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HomeNoirDeveloping" type="462c0819:PsiDirectoryNode" />
               <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -281,44 +246,54 @@
       <option name="presentableId" value="Default" />
       <updated>1530181188973</updated>
       <workItem from="1530181190461" duration="27241000" />
+      <workItem from="1530292637451" duration="1153000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1530292669515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1530292669515</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27241000" />
+    <option name="totallyTimeSpent" value="28394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="bottom" id="Event Log" sideWeight="0.5007153" side_tool="true" weight="0.32969698" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.32969698" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49928468" visible="true" weight="0.32969698" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49939394" visible="true" weight="0.24964234" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
-      <window_info id="Learn" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49928468" visible="true" weight="0.32969698" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49939394" visible="true" weight="0.2532189" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info id="Favorites" sideWeight="0.50060606" side_tool="true" weight="0.24964234" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Favorites" order="2" sideWeight="0.50060606" side_tool="true" weight="0.24964234" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +302,34 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/assets/font/ProximaNova-Bold.ttf">
+      <provider selected="true" editor-type-id="fontseditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9960">
+          <caret line="664" column="44" selection-start-line="664" selection-start-column="44" selection-end-line="664" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/index.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/post.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -373,19 +375,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="664" column="44" selection-start-line="664" selection-start-column="44" selection-end-line="664" selection-end-column="44" />
+        <state relative-caret-position="272">
+          <caret line="648" column="45" selection-start-line="648" selection-start-column="45" selection-end-line="648" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#672#678#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+        <state relative-caret-position="140">
+          <caret line="588" column="20" selection-start-line="588" selection-start-column="20" selection-end-line="588" selection-end-column="20" />
         </state>
       </provider>
     </entry>
