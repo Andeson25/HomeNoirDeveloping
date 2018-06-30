@@ -782,16 +782,16 @@
     ga('send', 'pageview');
    document.getElementById('play-video').addEventListener('click',function () {
        ga('send', 'event', 'Videos', 'play','Video-was-started');
-   },false);
+   });
     document.getElementById('video-close').addEventListener('click',function () {
         ga('send', 'event', 'Videos', 'close','Video-was-closed');
-    },false);
+    });
     document.getElementById('video').addEventListener('pause',function () {
         ga('send', 'event', 'Videos', 'pause','Video-was-pauses');
-    },false);
+    });
     document.getElementById('video').addEventListener('ended',function () {
         ga('send', 'event', 'Videos', 'ended','Video-was-watched');
-    },false);
+    });
 
 
 </script>
