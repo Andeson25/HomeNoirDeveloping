@@ -132,14 +132,14 @@ body {
     width: 100%;
 }
 
-#header .content:before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    content: '';
-    background-color: rgba(0, 0, 0, .4);
-}
+/*#header .content:before {*/
+    /*position: absolute;*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*z-index: 0;*/
+    /*content: '';*/
+    /*background-color: rgba(0, 0, 0, .4);*/
+/*}*/
 
 #header .content .logo {
     -ms-flex: 1;
@@ -153,8 +153,8 @@ body {
 }
 
 #play-video {
-    z-index: 5;
-    position: relative;
+    /*z-index: 5;*/
+    /*position: relative;*/
 }
 
 #header .content #play-video img {
@@ -168,10 +168,9 @@ body {
 
     display: -ms-flexbox;
     display: flex;
-
+    padding: 0 50px;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-width: 540px;
     -ms-flex-pack: end;
     font-size: 16px;
     height: auto;
@@ -179,13 +178,15 @@ body {
 }
 
 #header .content .copy h1 {
+
     font-family: Proxima Nova Bold;
     font-size: 18px;
-    font-size: 1.2rem;
+    font-size: 48px;
     font-weight: 400;
 }
 
 #header .content .copy p {
+    font-size: 30px;
     font-family: Proxima Nova Regular;
     margin: 0;
 }
@@ -359,46 +360,57 @@ body {
     justify-content: space-between;
     padding: 20px 10%;
 }
+button{
+}
 
 .content button {
+    stroke:  white;
     margin-top: 50px;
     vertical-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    cursor: pointer;
-    transition: all .1s linear;
-    letter-spacing: 2px;
-    width: 200px;
-    font-size: 14px;
-    line-height: 24px;
-    color: white;
-    text-transform: uppercase;
-    font-family: Proxima Nova Bold;
-    background-color: rgba(255, 255, 255, .4);
-}
-
-#top-header button {
     height: 60px;
     cursor: pointer;
-    transition: all .1s linear;
-    letter-spacing: 2px;
-    width: 200px;
+    transition: background-color .1s linear;
+    letter-spacing: .2em;
+    width: 210px;
+
     font-size: 14px;
     line-height: 24px;
     color: white;
     text-transform: uppercase;
     font-family: Proxima Nova Bold;
-    background-color: rgba(255, 255, 255, .4);
+    background-color: rgba(255, 255, 255, .2);
+}
+*{
+    letter-spacing: .025em;
+}
+#top-header button {
+    stroke:  white;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    cursor: pointer;
+    transition: background-color .1s linear;
+    letter-spacing: .2em;
+    width: auto;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    text-transform: uppercase;
+    font-family: Proxima Nova Bold;
+    background-color: rgba(255, 255, 255, .2);
 }
 
 #top-header button:hover {
-    background-color: rgba(255, 2555, 255, .8);
+    background-color: rgba(255, 2555, 255, .4);
 }
 
 button:hover {
-    background-color: rgba(255, 2555, 255, .8);
+    background-color: rgba(255, 2555, 255, .4);
 }
 
 #top-header img {
@@ -406,9 +418,12 @@ button:hover {
 }
 
 .footer {
-    height: 27vh;
+    box-sizing: border-box;
+    border-top: 5px solid white;
+    height: 200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: #e8e8e8;
@@ -425,15 +440,18 @@ button:hover {
     line-height: 24px;
     font-family: Proxima Nova Bold;
 }
-
+.footer a.mail{
+    margin: 5px!important;
+}
 .footer a {
     text-align: center;
-    margin: 2px 0;
+    letter-spacing: .1em;
+    margin: 2px 5px;
     font-size: 18px;
     line-height: 24px;
     color: #373737;
     text-decoration: none;
-    font-family: Proxima Nova Bold;
+    font-family: Proxima Nova Regular;
 }
 
 .footer a:hover {
@@ -460,12 +478,17 @@ button:hover {
 }
 
 .footer-nav a {
+
     font-family: Proxima Nova Regular;
     font-size: 18px;
     color: #373737;
     text-decoration: underline;
     text-underline-color: #373737;
 }
+.footer-a{
+    height: auto;
+}
+
 
 .privacy-policy {
     display: flex;
@@ -512,8 +535,8 @@ button:hover {
 
 .one-policy .violet-line {
     height: 5px;
-    margin: 0 auto;
-    width: 60%;
+    margin: 2.5px auto 0 ;
+    width: 40px;
     background-color: #b287ab;
 }
 
@@ -526,6 +549,7 @@ button:hover {
 }
 
 .text h2 {
+    line-height: 1;
     font-size: 18px;
     margin: 0 0 10px;
     text-transform: uppercase;
@@ -621,5 +645,7 @@ ul {
         height: 50px;
     }
 }
-
+button {
+    border: 1px solid white;
+}
 /*fixed header*/

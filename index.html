@@ -17,14 +17,13 @@
 
     <div id="top-header">
         <div class="logo"><img src="images/logo.png"/></div>
-        <button id="sign-up-button">stay connected &rarr;</button>
+        <button id="sign-up-button">stay connected <img src="./images/right-arrow-of-straight-thin-line.svg" style="height: 15px;  margin-left: 3px;" alt=""></button>
     </div>
     <div class="content">
         <div class="copy">
-            <h1>The space for blockchain minds
+            <h1>The space for blockchain minds <br>
                 to collide, create and inspire</h1>
-            <p>The space for blockchain minds
-                to collide, create and inspire</p>
+            <p>Shaping the future, one block at a time</p>
         </div>
         <button id="play-video">
             <img src="images/play-button.svg"/>
@@ -50,8 +49,7 @@
 
 <section class="footer">
     <img src="./images/closed-envelope.svg" alt="contact">
-    <h2>Contacts is</h2>
-    <a href="hello@homenoir.com">hello@homenoir.com</a>
+    <a class="mail"  href="hello@homenoir.com">Contacts us</a>
     <div class="footer-nav">
         <a class="footer-a" href="#1">PRIVACY POLICY</a>
         <a class="footer-a" href="#2">TERMS AND CONDITIONS</a>
@@ -255,8 +253,7 @@
 
 <section class="footer">
     <img src="./images/closed-envelope.svg" alt="contact">
-    <h2>Contacts is</h2>
-    <a href="hello@homenoir.com">hello@homenoir.com</a>
+    <a class="mail"  href="hello@homenoir.com">Contacts us</a>
     <div class="footer-nav">
         <a class="footer-a" href="#1">PRIVACY POLICY</a>
         <a class="footer-a" href="#2">TERMS AND CONDITIONS</a>
@@ -495,8 +492,7 @@
 </section>
 <section class="footer">
     <img src="./images/closed-envelope.svg" alt="contact">
-    <h2>Contacts is</h2>
-    <a href="mailto:hello@homenoir.com">hello@homenoir.com</a>
+    <a class="mail"  href="hello@homenoir.com">Contacts us</a>
     <div class="footer-nav">
         <a class="footer-a" href="#1">PRIVACY POLICY</a>
         <a class="footer-a" href="#2">TERMS AND CONDITIONS</a>
@@ -629,8 +625,7 @@
 </section>
 <section class="footer">
     <img src="./images/closed-envelope.svg" alt="contact">
-    <h2>Contacts is</h2>
-    <a href="hello@homenoir.com">hello@homenoir.com</a>
+    <a class="mail" href="hello@homenoir.com">Contacts us</a>
     <div class="footer-nav">
         <a class="footer-a" href="#1">PRIVACY POLICY</a>
         <a class="footer-a" href="#2">TERMS AND CONDITIONS</a>
@@ -645,8 +640,8 @@
     $(document).ready(function () {
         $('#cookies-close').on('click', function () {
             $('#cookies').slideUp('fast', function () {
-                $('#header').css("height", "73vh");
-                $('#video').css("height", "73vh");
+                $('#header').css("height", "calc(100vh - 200px)");
+                $('#video').css("height", "calc(100vh - 200px)");
             });
         });
         $('#play-video').on('click', function () {
@@ -725,12 +720,12 @@
         // }
 
         // Initiate scroll reveal
-        sr.reveal('#body');
-        sr.reveal('.photo', 100);
-        sr.reveal('#header .content > .logo', {delay: 500});
-        sr.reveal('#header .content > img', {delay: 700});
-        sr.reveal('#header .content > .copy', {delay: 900});
 
+
+        sr.reveal('#header .content .copy', {delay: 800});
+        sr.reveal('#header .content button', {delay: 1200});
+        sr.reveal('#top-header .logo',{delay:400});
+        sr.reveal('#top-header button',{delay:1600});
     });
 </script>
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js"
@@ -745,11 +740,12 @@
 <script type="text/javascript">
 
     document.getElementById("sign-up-button").addEventListener("click",function () {
+        document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        console.log(document.cookie);
         require(["mojo/signup-forms/Loader"], function (L) {
             L.start({"baseUrl": "mc.us18.list-manage.com", "uuid": "1ef7bc0177e4caf5369888114", "lid": "39af6d79e5"})
         });
-        document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-        console.log(document.cookie);
+
     });
 </script>
 <!--<script async src='https://www.google-analytics.com/analytics.js'></script>-->
