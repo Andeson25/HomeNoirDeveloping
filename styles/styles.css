@@ -420,7 +420,6 @@ button:hover {
 .footer {
     box-sizing: border-box;
     border-top: 5px solid white;
-    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -596,7 +595,15 @@ ul {
         padding: 75px 25px;
     }
 
-
+    .copy{
+        padding-top: 90px!important;
+    }
+    .copy h1{
+        font-size: 24px!important;
+    }
+    .copy p{
+        font-size: 18px!important;
+    }
 
     #newsletter-form .email {
         max-width: 420px;
@@ -611,7 +618,6 @@ ul {
         font-size: .75rem;
     }
     .footer {
-        height: 45vh;
     }
     .footer .footer-nav {
         width: 100% !important;

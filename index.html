@@ -17,7 +17,8 @@
 
     <div id="top-header">
         <div class="logo"><img src="images/logo.png"/></div>
-        <button id="sign-up-button">stay connected <img src="./images/right-arrow-of-straight-thin-line.svg" style="height: 15px;  margin-left: 3px;" alt=""></button>
+        <button id="sign-up-button">stay connected <img src="./images/right-arrow-of-straight-thin-line.svg"
+                                                        style="height: 15px;  margin-left: 3px;" alt=""></button>
     </div>
     <div class="content">
         <div class="copy">
@@ -49,7 +50,7 @@
 
 <section class="footer">
     <img src="./images/closed-envelope.svg" alt="contact">
-    <a class="mail"  href="hello@homenoir.com">Contacts us</a>
+    <a class="mail" href="hello@homenoir.com">Contacts us</a>
     <div class="footer-nav">
         <a class="footer-a" href="#1">PRIVACY POLICY</a>
         <a class="footer-a" href="#2">TERMS AND CONDITIONS</a>
@@ -253,7 +254,7 @@
 
 <section class="footer">
     <img src="./images/closed-envelope.svg" alt="contact">
-    <a class="mail"  href="hello@homenoir.com">Contacts us</a>
+    <a class="mail" href="hello@homenoir.com">Contacts us</a>
     <div class="footer-nav">
         <a class="footer-a" href="#1">PRIVACY POLICY</a>
         <a class="footer-a" href="#2">TERMS AND CONDITIONS</a>
@@ -492,7 +493,7 @@
 </section>
 <section class="footer">
     <img src="./images/closed-envelope.svg" alt="contact">
-    <a class="mail"  href="hello@homenoir.com">Contacts us</a>
+    <a class="mail" href="hello@homenoir.com">Contacts us</a>
     <div class="footer-nav">
         <a class="footer-a" href="#1">PRIVACY POLICY</a>
         <a class="footer-a" href="#2">TERMS AND CONDITIONS</a>
@@ -640,8 +641,14 @@
     $(document).ready(function () {
         $('#cookies-close').on('click', function () {
             $('#cookies').slideUp('fast', function () {
-                $('#header').css("height", "calc(100vh - 200px)");
-                $('#video').css("height", "calc(100vh - 200px)");
+                var h = $('.footer').css('height');
+                if (window.matchMedia("(max-device-width: 627px)").matches) {
+                    $('#header').css("height", `calc(100vh)`);
+                    $('#video').css("height", `calc(100vh)`);
+                } else {
+                    $('#header').css("height", `calc(100vh - ${h}`);
+                    $('#video').css("height", `calc(100vh -${h}`);
+                }
             });
         });
         $('#play-video').on('click', function () {
@@ -724,8 +731,8 @@
 
         sr.reveal('#header .content .copy', {delay: 800});
         sr.reveal('#header .content button', {delay: 1200});
-        sr.reveal('#top-header .logo',{delay:400});
-        sr.reveal('#top-header button',{delay:1600});
+        sr.reveal('#top-header .logo', {delay: 400});
+        sr.reveal('#top-header button', {delay: 1600});
     });
 </script>
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js"
@@ -733,13 +740,13 @@
 
 
 <!--<script type="text/javascript">-->
-    <!--require(["mojo/signup-forms/Loader"], function (L) {-->
-        <!--L.start({"baseUrl": "mc.us18.list-manage.com", "uuid": "1ef7bc0177e4caf5369888114", "lid": "39af6d79e5"})-->
-    <!--});-->
+<!--require(["mojo/signup-forms/Loader"], function (L) {-->
+<!--L.start({"baseUrl": "mc.us18.list-manage.com", "uuid": "1ef7bc0177e4caf5369888114", "lid": "39af6d79e5"})-->
+<!--});-->
 <!--</script>-->
 <script type="text/javascript">
 
-    document.getElementById("sign-up-button").addEventListener("click",function () {
+    document.getElementById("sign-up-button").addEventListener("click", function () {
         document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
         console.log(document.cookie);
         require(["mojo/signup-forms/Loader"], function (L) {
@@ -750,42 +757,45 @@
 </script>
 <!--<script async src='https://www.google-analytics.com/analytics.js'></script>-->
 <!--<script>-->
-    <!--window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;-->
-    <!--ga('create', 'UA-121645709-1', 'auto');-->
-    <!--ga('send', 'pageview');-->
-    <!--ga('send', 'event', 'Videos', 'play');-->
+<!--window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;-->
+<!--ga('create', 'UA-121645709-1', 'auto');-->
+<!--ga('send', 'pageview');-->
+<!--ga('send', 'event', 'Videos', 'play');-->
 <!--</script>-->
 <!-- Global Site Tag (gtag.js) - Google Analytics -->
 <!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-121645709-1"></script>-->
 <!--<script>-->
-    <!--window.dataLayer = window.dataLayer || [];-->
-    <!--function gtag(){dataLayer.push(arguments);}-->
-    <!--gtag('js', new Date());-->
+<!--window.dataLayer = window.dataLayer || [];-->
+<!--function gtag(){dataLayer.push(arguments);}-->
+<!--gtag('js', new Date());-->
 
-    <!--gtag('config', 'UA-121645709-1');-->
+<!--gtag('config', 'UA-121645709-1');-->
 
-    <!--$('#play-button').click(function () {-->
-        <!--alert('clicked');-->
-        <!--gtag('event','video_start', {-->
-            <!--'event_callback':alert('complete')-->
-        <!--});-->
-    <!--})-->
+<!--$('#play-button').click(function () {-->
+<!--alert('clicked');-->
+<!--gtag('event','video_start', {-->
+<!--'event_callback':alert('complete')-->
+<!--});-->
+<!--})-->
 <!--</script>-->
 <script>
-    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    window.ga = window.ga || function () {
+        (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
     ga('create', 'UA-121645709-1', 'auto');
     ga('send', 'pageview');
-   document.getElementById('play-video').addEventListener('click',function () {
-       ga('send', 'event', 'Videos', 'play','Video-was-started');
-   });
-    document.getElementById('video-close').addEventListener('click',function () {
-        ga('send', 'event', 'Videos', 'close','Video-was-closed');
+    document.getElementById('play-video').addEventListener('click', function () {
+        ga('send', 'event', 'Videos', 'play', 'Video-was-started');
     });
-    document.getElementById('video').addEventListener('pause',function () {
-        ga('send', 'event', 'Videos', 'pause','Video-was-pauses');
+    document.getElementById('video-close').addEventListener('click', function () {
+        ga('send', 'event', 'Videos', 'close', 'Video-was-closed');
     });
-    document.getElementById('video').addEventListener('ended',function () {
-        ga('send', 'event', 'Videos', 'ended','Video-was-watched');
+    document.getElementById('video').addEventListener('pause', function () {
+        ga('send', 'event', 'Videos', 'pause', 'Video-was-pauses');
+    });
+    document.getElementById('video').addEventListener('ended', function () {
+        ga('send', 'event', 'Videos', 'ended', 'Video-was-watched');
     });
 
 
