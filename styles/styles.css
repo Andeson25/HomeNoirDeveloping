@@ -355,7 +355,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .3);
     display: flex;
     justify-content: space-between;
     padding: 20px 10%;
@@ -424,7 +424,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 5px;
     background-color: #e8e8e8;
 }
 
@@ -434,8 +434,8 @@ button:hover {
 }
 
 .footer h2 {
-    margin: 10px 0 5px;
-    font-size: 18px;
+    margin: 5px 0 0;
+    font-size: 16px;
     line-height: 24px;
     font-family: Proxima Nova Bold;
 }
@@ -446,7 +446,7 @@ button:hover {
     text-align: center;
     letter-spacing: .1em;
     margin: 2px 5px;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     color: #373737;
     text-decoration: none;
@@ -594,6 +594,9 @@ ul {
     #newsletter-form {
         padding: 75px 25px;
     }
+    #top-header{
+        padding: 20px 5%;
+    }
 
     .copy{
         padding-top: 90px!important;
@@ -636,6 +639,10 @@ ul {
         text-align: center;
         font-size: 16px;
     }
+    #sign-up-button{
+        font-size: 14px!important;
+        padding: 0 5px!important;
+    }
 
     #top-header button {
         height: 50px !important;
@@ -649,6 +656,27 @@ ul {
 
     #top-header .logo img {
         height: 50px;
+    }
+    #play-video{
+        height: 50px;
+    }
+}
+@media screen and (orientation:landscape) and (max-device-width: 627px) {
+    #play-video{
+        margin-top: 10px!important;
+    }
+    #header{
+        height: 100vh;
+    }
+    #video{
+        height: 100vh;
+    }
+
+    .content{
+        height: 100vh!important;
+    }
+    .copy{
+        padding-top: 50px!important;
     }
 }
 button {
