@@ -168,7 +168,9 @@ body {
 
     display: -ms-flexbox;
     display: flex;
-    padding: 0 50px;
+    padding: 0 ;
+    justify-content: center;
+    align-items: center;
     -ms-flex-direction: column;
     flex-direction: column;
     -ms-flex-pack: end;
@@ -608,9 +610,7 @@ ul {
         height: 100vh!important;
     }
 
-    .copy {
-        padding-top: 90px !important;
-    }
+
 
     .copy h1 {
         font-size: 18px !important;
@@ -694,6 +694,9 @@ ul {
 @media screen and (orientation: landscape) and (max-device-width: 890px) {
     .form-wrapper .top{
         height: 0!important;
+    }
+    .copy {
+        padding-top: 90px !important;
     }
     #mc-embedded-subscribe-form{
         height: 100vh!important;
