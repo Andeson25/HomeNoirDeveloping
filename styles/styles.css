@@ -776,7 +776,6 @@ button {
     /*transition: all .5s linear;*/
     position: fixed;
     z-index: 30;
-    height: 500px;
     width: 450px;
     left: calc(50% - 225px);
     overflow: auto;
@@ -787,7 +786,7 @@ button {
     background-image: url("/images/form.jpg");
     background-size: cover;
     background-position: center center;
-    height: 25%;
+    height: 125px;
 }
 #mc_embed_signup img{
     z-index: 40;
@@ -802,7 +801,9 @@ button {
     height: 75%;
     padding: 30px!important;
 }
-
+#mc_embed_signup_scroll{
+    height: auto!important;
+}
 #mc_embed_signup form > div{
     display: flex;
     flex-direction: column;
