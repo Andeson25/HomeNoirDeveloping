@@ -597,7 +597,7 @@ ul {
 }
 
 
-@media screen and  (max-device-width: 890px) {
+@media screen and  (max-device-width:  767.98px) {
     #newsletter-form {
         padding: 75px 25px!important;
     }
@@ -690,7 +690,7 @@ ul {
     }
 }
 
-@media screen and (orientation: landscape) and (max-device-width: 890px) {
+@media screen and (orientation: landscape) and (max-device-width:  767.98px) {
     .form-wrapper .top{
         height: 0!important;
     }

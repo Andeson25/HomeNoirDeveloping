@@ -126,7 +126,7 @@ var $mcj = jQuery.noConflict(true);</script>
         $('#cookies-close').on('click', function () {
             $('#cookies').slideUp('fast', function () {
                 var h = $('.footer').css('height');
-                if (window.matchMedia("(max-device-width: 890)").matches) {
+                if (window.matchMedia("(max-device-width:  767.98px)").matches) {
                     $('#header').css("height", `calc(100vh)`);
                     $('#video').css("height", `calc(100vh)`);
                 } else {
@@ -181,10 +181,8 @@ var $mcj = jQuery.noConflict(true);</script>
 
         $("#sign-up-button").click(function (e) {
             e.preventDefault();
-
-                $('body,html').css('overflow', 'hidden');
-                $('body,html').css('position', 'relative');
-
+            $('body,html').css('overflow', 'hidden');
+            $('body,html').css('position', 'relative');
             $('body,html').css('height','100%');
             $('#top-header').css('display','none');
             $('#custom-form,#mc-embedded-subscribe-form,form').fadeIn('fast');
