@@ -60,6 +60,9 @@ body {
     body {
         font-size: 24px;
     }
+    .footer-nav{
+        width: 80% !important;
+    }
 }
 
 #cookies {
@@ -477,7 +480,7 @@ button:hover {
 }
 
 .footer-nav {
-    width: 70%;
+    width: 50%;
     display: flex;
     justify-content: space-between;
 }
@@ -485,7 +488,7 @@ button:hover {
 .footer-nav a {
 
     font-family: Proxima Nova Regular;
-    font-size: 18px;
+    font-size: 16px;
     color: #373737;
     text-decoration: underline;
     text-underline-color: #373737;
@@ -596,7 +599,11 @@ ul {
     color: #c698bf;
 }
 
-
+@media (max-width: 767.98px) {
+    .footer-nav{
+        width: 80% !important;
+    }
+}
 @media screen and  (max-device-width:  767.98px) {
     #newsletter-form {
         padding: 75px 25px!important;
