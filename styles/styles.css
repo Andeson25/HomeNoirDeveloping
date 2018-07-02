@@ -111,7 +111,6 @@ body {
     color: #FFFFFF;
     display: -ms-flexbox;
     display: flex;
-    height: calc(100vh - 100px);
     overflow: hidden;
     position: relative;
     text-align: center;
