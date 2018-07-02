@@ -697,7 +697,7 @@ ul {
     }
 }
 
-@media screen and (orientation: landscape) and (max-device-width:  767.98px) {
+@media screen and (orientation: landscape) and (max-device-width:  800px) {
     .form-wrapper .top{
         height: 0!important;
     }
