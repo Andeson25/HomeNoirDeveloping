@@ -120,7 +120,7 @@ var $mcj = jQuery.noConflict(true);</script>
                 $('#video').css("height", `calc(100vh - 100px)`);
             }
             $('#logo').css('display','block');
-            $('#sign-up-button').css('display','block');
+            $('#sign-up-button').css('display','flex');
             $('#content').css('display','flex');
         })();
         $('#cookies-close').on('click', function () {
@@ -134,6 +134,27 @@ var $mcj = jQuery.noConflict(true);</script>
                     $('#video').css("height", `calc(100vh) `);
                 }
             });
+        });
+        // $('body').not('#mc_embed_signup, .top , form').click(function(e) {
+        //     e.preventDefault();
+        //     $('body,html').css('overflow','visible');
+        //     $('body,html').css('position','static');
+        //     $('#top-header').css('display','flex');
+        //     $('#custom-form,#mc-embedded-subscribe-form,form').fadeOut('fast');
+        // });
+        $(document).click(function(e)
+        {
+            var container = $("#mc_embed_signup,#sign-up-button");
+
+            // if the target of the click isn't the container nor a descendant of the container
+            if (!container.is(e.target) && container.has(e.target).length === 0)
+            {
+                e.preventDefault();
+                $('body,html').css('overflow','visible');
+                $('body,html').css('position','static');
+                $('#top-header').css('display','flex');
+                $('#custom-form,#mc-embedded-subscribe-form,form').fadeOut('fast');
+            }
         });
         $('#play-video').on('click', function () {
             $('#video-overlay')

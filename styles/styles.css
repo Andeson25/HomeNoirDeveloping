@@ -112,6 +112,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     overflow: hidden;
+    height: 100vh;
     position: relative;
     text-align: center;
 }
@@ -339,7 +340,7 @@ body {
 }
 
 #video-overlay #video {
-    height: calc(100vh - 100px);
+    height: 100vh;
     width: 100%;
 }
 
