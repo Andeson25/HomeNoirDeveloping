@@ -477,7 +477,7 @@ button:hover {
 }
 
 .footer-nav {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 }
@@ -732,7 +732,7 @@ ul {
         height: 100vh;
     }
     .footer-nav{
-        width: 60% !important;
+        width: 90% !important;
     }
     #video {
         height: 100vh;
