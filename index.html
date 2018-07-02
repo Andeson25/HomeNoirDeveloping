@@ -181,10 +181,10 @@ var $mcj = jQuery.noConflict(true);</script>
 
         $("#sign-up-button").click(function (e) {
             e.preventDefault();
-            if (!window.matchMedia("(max-device-width: 890px)").matches&&!window.matchMedia("screen and (orientation: landscape) and (max-device-width: 890px)").matches) {
+
                 $('body,html').css('overflow', 'hidden');
                 $('body,html').css('position', 'relative');
-            }
+
             $('body,html').css('height','100%');
             $('#top-header').css('display','none');
             $('#custom-form,#mc-embedded-subscribe-form,form').fadeIn('fast');
