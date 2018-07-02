@@ -41,7 +41,7 @@
     background: #EDE6E4
 }
 
-​
+
 html,
 body {
     background-color: #EDE6E4;
@@ -322,7 +322,7 @@ body {
     font-size: 10px;
     font-size: .625rem;
     position: absolute;
-    top: 20px;
+    top: 10%;
     height: 25px;
     right: 20px;
     z-index: 3;
@@ -427,7 +427,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 5px 5px 10px 5px;
     background-color: #e8e8e8;
 }
 
@@ -595,13 +595,17 @@ ul {
     color: #c698bf;
 }
 
-@media (max-device-width: 627px) {
+
+@media screen and  (max-device-width: 890px) {
     #newsletter-form {
-        padding: 75px 25px;
+        padding: 75px 25px!important;
     }
 
     #top-header {
-        padding: 20px 5%;
+        padding: 20px 5% !important;
+    }
+    #header,#video{
+        height: 100vh!important;
     }
 
     .copy {
@@ -609,35 +613,23 @@ ul {
     }
 
     .copy h1 {
-        font-size: 24px !important;
-    }
-
-    .copy p {
         font-size: 18px !important;
     }
 
-    #newsletter-form .email {
-        max-width: 420px;
-        margin: 0 auto;
+    .copy p {
+        font-size: 16px !important;
     }
 
-    #newsletter-form .email form fieldset label {
-        font-size: .75rem;
-    }
-
-    #newsletter-form .email form fieldset input {
-        font-size: .75rem;
-    }
 
     .footer {
     }
 
     .footer .footer-nav {
-        width: 100% !important;
+        width: 70% !important;
     }
 
     .footer .footer-nav a, .footer a, .footer h2 {
-        font-size: 14px;
+        font-size: 14px!important;
     }
 
     .one-policy {
@@ -647,7 +639,7 @@ ul {
 
     .policy-content h3 {
         text-align: center;
-        font-size: 16px;
+        font-size: 14px!important;
     }
 
     #sign-up-button {
@@ -672,17 +664,74 @@ ul {
     #play-video {
         height: 50px;
     }
+    #mc_embed_signup {
+        overflow-y: auto!important;
+        top: 0!important;
+        right: 0!important;
+        left: 0!important;
+        height: auto!important;
+        height: 100vh!important;
+        width: 100% !important;
+
+    }
+    #mc-embedded-subscribe-form{
+        padding: 15px!important;
+    }
+    .form-wrapper .top{
+        height: 0!important;
+    }
+    #mc-embedded-subscribe-form{
+        height: 100vh!important;
+    }
+    #mc_embed_signup img{
+        filter: invert(100%);
+    }
+    #mc-embedded-subscribe{
+        height: 100% !important;
+    }
 }
 
-@media screen and (orientation: landscape) and (max-device-width: 627px) {
+@media screen and (orientation: landscape) and (max-device-width: 890px) {
+    .form-wrapper .top{
+        height: 0!important;
+    }
+    #mc-embedded-subscribe-form{
+        height: 100vh!important;
+    }
+    #mc_embed_signup img{
+        filter: invert(100%);
+    }
+    #mc-embedded-subscribe{
+        height: 100% !important;
+    }
+
+    h1{
+        font-size: 18px!important;
+    }
     #play-video {
         margin-top: 10px !important;
     }
+    #mc-embedded-subscribe{
+        height: 100% !important;
+    }
+    .copy p{
+        font-size: 16px!important;
+    }
 
+    #mc_embed_signup {
+        overflow-y: auto!important;
+        top: 0!important;
+        right: 0!important;
+        left: 0!important;
+        height: 100vh!important;
+        width: 100% !important;
+    }
     #header {
         height: 100vh;
     }
-
+    .footer-nav{
+        width: 60% !important;
+    }
     #video {
         height: 100vh;
     }
@@ -694,6 +743,7 @@ ul {
     .copy {
         padding-top: 50px !important;
     }
+
 }
 
 button {
@@ -722,7 +772,7 @@ button {
 #mc_embed_signup {
     /*transition: all .5s linear;*/
     position: fixed;
-    z-index: 10;
+    z-index: 30;
     height: 500px;
     width: 450px;
     left: calc(50% - 225px);
@@ -736,18 +786,18 @@ button {
     background-position: center center;
     height: 25%;
 }
-.top img{
-    height: 20px;
+#mc_embed_signup img{
+    z-index: 40;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
 }
 #mc_embed_signup form{
     width: 100%;
     height: 75%;
     padding: 30px!important;
-    position: relative;
 }
 
 #mc_embed_signup form > div{
