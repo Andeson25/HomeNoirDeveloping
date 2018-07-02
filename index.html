@@ -727,7 +727,7 @@
         // }
 
         // Initiate scroll reveal
-
+        document.getElementById("sign-up-button").addEventListener("click", showMailingPopUp);
 
         sr.reveal('#header .content .copy', {delay: 800});
         sr.reveal('#header .content button', {delay: 1200});
@@ -746,15 +746,16 @@
 <!--</script>-->
 <script type="text/javascript">
 
-    document.getElementById("sign-up-button").addEventListener("click", function () {
-        document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-        console.log(document.cookie);
+    function showMailingPopUp() {
         require(["mojo/signup-forms/Loader"], function (L) {
             L.start({"baseUrl": "mc.us18.list-manage.com", "uuid": "1ef7bc0177e4caf5369888114", "lid": "39af6d79e5"})
         });
+        document.cookie = "MCEvilPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    };
 
-    });
+
 </script>
+
 <!--<script async src='https://www.google-analytics.com/analytics.js'></script>-->
 <!--<script>-->
 <!--window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;-->
