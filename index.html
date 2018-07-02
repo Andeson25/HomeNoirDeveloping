@@ -17,11 +17,11 @@
 <section id="header" style="display: flex; flex-direction: column">
 
     <div id="top-header">
-        <div class="logo"><img src="images/logo.png"/></div>
-        <button id="sign-up-button">stay connected <img src="./images/right-arrow-of-straight-thin-line.svg"
+        <div class="logo" id="logo" style="display: none"><img src="images/logo.png"/></div>
+        <button id="sign-up-button" style="display: none">stay connected <img src="./images/right-arrow-of-straight-thin-line.svg"
                                                         style="height: 15px;  margin-left: 3px;" alt=""></button>
     </div>
-    <div class="content">
+    <div class="content" id="content" style="display:none;">
         <div class="copy">
             <h1>The space for blockchain minds <br>
                 to collide, create and inspire</h1>
@@ -87,7 +87,7 @@
 }(jQuery));
 var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
-<div id="cookies">
+<div id="cookies" style="display: none;">
     <div class="content">This website uses cookies to ensure you get the best experience.</div>
     <a id="cookies-close" href="#">OK, I understand</a>
 </div>
@@ -108,6 +108,21 @@ var $mcj = jQuery.noConflict(true);</script>
 <script>
 
     $(document).ready(function () {
+        (function () {
+            if(checkCookie())
+            {
+                $('#cookies').css('display','none');
+                $('#header').css("height", `100vh`);
+                $('#video').css("height", `100vh`);
+            }else{
+                $('#cookies').css('display','flex');
+                $('#header').css("height", `calc(100vh - 100px)`);
+                $('#video').css("height", `calc(100vh - 100px)`);
+            }
+            $('#logo').css('display','block');
+            $('#sign-up-button').css('display','block');
+            $('#content').css('display','flex');
+        })();
         $('#cookies-close').on('click', function () {
             $('#cookies').slideUp('fast', function () {
                 var h = $('.footer').css('height');
@@ -171,12 +186,7 @@ var $mcj = jQuery.noConflict(true);</script>
         });
 
         (function () {
-            if(checkCookie())
-            {
-                $('#cookies').css('display','none');
-                $('#header').css("height", `calc(100vh)`);
-                $('#video').css("height", `calc(100vh)`);
-            }
+
 
 
             for (let i = 0; i < document.getElementsByClassName('footer-a').length; i++) {
