@@ -195,9 +195,9 @@ var $mcj = jQuery.noConflict(true);</script>
     <img src="./images/closed-envelope.svg" alt="contact">
     <a class="mail" href="hello@homenoir.com">Contacts us</a>
     <div class="footer-nav">
-        <a class="footer-a" href="#1">PRIVACY POLICY</a>
-        <a class="footer-a" href="#2">TERMS AND CONDITIONS</a>
-        <a class="footer-a" href="#3">COOKIE POLICY</a>
+        <a class="footer-a" href="PrivacyPolicy.html">PRIVACY POLICY</a>
+        <a class="footer-a" href="TermsAndConditions.html">TERMS AND CONDITIONS</a>
+        <a class="footer-a" href="CookiePolicy.html">COOKIE POLICY</a>
     </div>
     <h2>© Home Noir Limited. All rights reserved.</h2>
 </section>
@@ -206,40 +206,6 @@ var $mcj = jQuery.noConflict(true);</script>
 <script>
 
     $(document).ready(function () {
-        $('#cookies-close').on('click', function () {
-            $('#cookies').slideUp('fast', function () {
-                var h = $('.footer').css('height');
-                if (window.matchMedia("(max-device-width: 890)").matches) {
-                    $('#header').css("height", `calc(100vh)`);
-                    $('#video').css("height", `calc(100vh)`);
-                } else {
-                    $('#header').css("height", `calc(100vh) `);
-                    $('#video').css("height", `calc(100vh) `);
-                }
-            });
-        });
-        $('#play-video').on('click', function () {
-            $('#video-overlay')
-                .css("display", "flex")
-                .hide()
-                .fadeIn('fast', function () {
-                    $('#video').get(0).play();
-                });
-        });
-
-        $('#video-overlay, #video-close').on('click', function () {
-            $('#video').get(0).pause();
-            $('#video-overlay').fadeOut('slow');
-        });
-
-        $('#video').on('ended', function () {
-            $('#video').get(0).pause();
-            $('#video-overlay').fadeOut('slow');
-        });
-
-        $("#video-container").click(function (e) {
-            e.stopPropagation();
-        });
 
         $("#sign-up-button").click(function (e) {
             e.preventDefault();
@@ -270,53 +236,22 @@ var $mcj = jQuery.noConflict(true);</script>
 
         (function () {
 
-            for (let i in document.getElementsByClassName('footer-a')) {
-                if (document.getElementsByClassName('footer-a')[i].hash.charAt(1) != document.URL.charAt(document.URL.length - 1)) {
+            for (let i= 0; i< document.getElementsByClassName('footer-a').length;i++) {
+                if (document.getElementsByClassName('footer-a')[i].href!= document.URL) {
                     document.getElementsByClassName('footer-a')[i].style.textDecoration = 'none';
                 } else {
                     document.getElementsByClassName('footer-a')[i].style.textDecoration = 'underline';
-                }
+                    document.getElementsByClassName('footer-a')[i].style.color = '#b287ab';
 
-                if (i >= 11) {
-                    return;
                 }
             }
         })();
-        document.querySelectorAll('.footer-a').forEach(next => {
-            next.addEventListener('click', (e) => {
-                let href = e.target.href;
-                for (let i in document.getElementsByClassName('footer-a')) {
-                    if (document.getElementsByClassName('footer-a')[i].hash.charAt(1) != href.charAt(href.length - 1)) {
-                        document.getElementsByClassName('footer-a')[i].style.textDecoration = 'none';
-
-                    } else {
-                        document.getElementsByClassName('footer-a')[i].style.textDecoration = 'underline';
-                    }
-                    if (i >= 11) {
-                        return;
-                    }
-                }
-            });
-        });
-
-        // for (let i in document.querySelectorAll('.footer-a')) {
-        //     document.querySelectorAll('.footer-a')[i].addEventListener('onclick', () => {
-        //         alert(this.attr('href'));
-        //         // for (let i in  $('a.footer-a')) {
-        //         // if ($('a.footer-a').attr('id') != url.charAt(url.length - 1)) {
-        //         //     $('a.footer-a').css('text-decoration', 'none');
-        //         // }
-        //         // }
-        //     },false);
-        // }
-
-        // Initiate scroll reveal
 
 
-        sr.reveal('#header .content .copy', {delay: 800});
-        sr.reveal('#header .content button', {delay: 1200});
-        sr.reveal('#top-header .logo', {delay: 400});
-        sr.reveal('#top-header button', {delay: 1600});
+
+
+        sr.reveal('#top-header .logo', {delay: 100});
+        sr.reveal('#top-header button', {delay: 400});
     });
 </script>
 
@@ -328,19 +263,6 @@ var $mcj = jQuery.noConflict(true);</script>
     ga.l = +new Date;
     ga('create', 'UA-121645709-1', 'auto');
     ga('send', 'pageview');
-    document.getElementById('play-video').addEventListener('click', function () {
-        ga('send', 'event', 'Videos', 'play', 'Video-was-started');
-    });
-    document.getElementById('video-close').addEventListener('click', function () {
-        ga('send', 'event', 'Videos', 'close', 'Video-was-closed');
-    });
-    document.getElementById('video').addEventListener('pause', function () {
-        ga('send', 'event', 'Videos', 'pause', 'Video-was-pauses');
-    });
-    document.getElementById('video').addEventListener('ended', function () {
-        ga('send', 'event', 'Videos', 'ended', 'Video-was-watched');
-    });
-
 
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>

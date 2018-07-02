@@ -172,34 +172,16 @@ var $mcj = jQuery.noConflict(true);</script>
 
         (function () {
 
-            for (let i in document.getElementsByClassName('footer-a')) {
-                if (document.getElementsByClassName('footer-a')[i].hash.charAt(1) != document.URL.split('.').reverse()[0]) {
+            for (let i = 0; i < document.getElementsByClassName('footer-a').length; i++) {
+                if (document.getElementsByClassName('footer-a')[i].href != document.URL) {
                     document.getElementsByClassName('footer-a')[i].style.textDecoration = 'none';
                 } else {
                     document.getElementsByClassName('footer-a')[i].style.textDecoration = 'underline';
-                }
+                    document.getElementsByClassName('footer-a')[i].style.color = '#b287ab';
 
-                if (i >= 11) {
-                    return;
                 }
             }
         })();
-        document.querySelectorAll('.footer-a').forEach(next => {
-            next.addEventListener('click', (e) => {
-                let href = e.target.href;
-                for (let i in document.getElementsByClassName('footer-a')) {
-                    if (document.getElementsByClassName('footer-a')[i].hash.charAt(1) != href.charAt(href.length - 1)) {
-                        document.getElementsByClassName('footer-a')[i].style.textDecoration = 'none';
-
-                    } else {
-                        document.getElementsByClassName('footer-a')[i].style.textDecoration = 'underline';
-                    }
-                    if (i >= 11) {
-                        return;
-                    }
-                }
-            });
-        });
 
         // for (let i in document.querySelectorAll('.footer-a')) {
         //     document.querySelectorAll('.footer-a')[i].addEventListener('onclick', () => {
