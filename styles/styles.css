@@ -19,6 +19,15 @@
     font-weight: Bold;
     font-style: normal;
 }
+@font-face {
+    font-family: Proxima Nova Light;
+    src: url("../assets/font/ProximaNova-Light.ttf") format('embedded-opentype'),
+    url("../assets/font/ProximaNova-Light.ttf") format('woff'),
+    url("../assets/font/ProximaNova-Light.ttf") format('truetype'),
+    url("../assets/font/ProximaNova-Light.ttf") format('svg');
+    font-weight: Bold;
+    font-style: normal;
+}
 
 * {
     outline: none;
@@ -67,7 +76,8 @@ body {
 
 #cookies {
     height: 100px;
-    position: relative;
+    position: fixed;
+    bottom: 0;
     z-index: 4;
     flex-direction: column;
     -ms-flex-align: center;
@@ -75,7 +85,7 @@ body {
     background-color: white;
     color: #373737;
     display: -ms-flexbox;
-    /*display: flex;*/
+    width: 100%;
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 20px 25px;
@@ -182,7 +192,7 @@ body {
 }
 
 #header .content .copy h1 {
-
+    margin-bottom: 3px!important;
     font-family: Proxima Nova Bold;
     font-size: 18px;
     font-size: 48px;
@@ -195,9 +205,10 @@ body {
     margin: 0;
 }
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-device-width: 800px) {
     #header {
     }
+
 
     #header .content .logo img {
         height: 120px;
@@ -309,7 +320,7 @@ body {
     display: none;
     height: 100%;
     z-index: 20;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
 }
@@ -370,7 +381,7 @@ button {
 
 .content button {
     stroke: white;
-    margin-top: 100px;
+    margin-top: 60px;
     vertical-align: center;
     display: flex;
     align-items: center;
@@ -431,7 +442,7 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px 5px 10px 5px;
+    height: 12vh;
     background-color: #e8e8e8;
 }
 
@@ -444,17 +455,15 @@ button:hover {
     margin: 5px 0 0;
     font-size: 16px;
     line-height: 24px;
-    font-family: Proxima Nova Bold;
+    font-family: Proxima Nova Light;
 }
 
 .footer a.mail {
-    margin: 5px !important;
 }
 
 .footer a {
     text-align: center;
     letter-spacing: .1em;
-    margin: 2px 5px;
     font-size: 14px;
     line-height: 24px;
     color: #373737;
@@ -480,7 +489,7 @@ button:hover {
 }
 
 .footer-nav {
-    width: 50%;
+    width: 80% !important;
     display: flex;
     justify-content: space-between;
 }
@@ -495,7 +504,7 @@ button:hover {
 }
 
 .footer-a {
-    height: auto;
+
 }
 
 .privacy-policy {
@@ -612,9 +621,7 @@ ul {
     #top-header {
         padding: 20px 5% !important;
     }
-    #header,#video{
-        height: 100vh!important;
-    }
+
 
 
 
@@ -630,13 +637,16 @@ ul {
     .footer {
     }
 
-    .footer .footer-nav {
-        width: 100% !important;
-    }
+
 
     .footer .footer-nav a, .footer a, .footer h2 {
-        font-size: 14px!important;
+        font-size: 10px!important;
+        line-height: 1;
     }
+    .footer-nav{
+        width: 98% !important;
+    }
+
 
     .one-policy {
         padding: 0 10px;
@@ -739,7 +749,7 @@ ul {
         height: 100vh;
     }
     .footer-nav{
-        width: 90% !important;
+        width: 80% !important;
     }
     #video {
         height: 100vh;
